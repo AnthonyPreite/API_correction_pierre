@@ -1,0 +1,15 @@
+RewriteEngine On
+# comment
+# RewriteRule perdu.html$ trouve.html [NC,L]
+# RewriteRule promo$ produits/food/biscuits.html [L]
+RewriteRule news/([0-9]+)$ details-news.php?id_news=$1 [L]
+RewriteRule news$ all-news.php [L]
+RewriteRule personnes/([0-9]+)$ personnes.php?id_personnes=$1 [L]
+RewriteRule personnes$ personnes.php [L]
+RewriteRule deconnect$ auth_api.php?delog [L]
+RewriteRule auth$ auth_api.php [L]
+RewriteRule produits$ produits.php [L]
+RewriteRule produits/([0-9]+)$ produits.php?id_produits=$1 [L]
+RewriteRule categories$ categories.php [L]
+RewriteRule categories/([0-9]+)$ categories.php?id_categories=$1 [L]
+
